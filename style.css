@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+body{
+    background-color: #003153;
+    background-image: linear-gradient(315deg, #003153 0%, #1B1B1B 79%);
+
+    text-align: center;
+}
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+}
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    background-color: rgb(235, 235, 100);
+    border-radius: 30px;
+    border: none;
+    box-shadow: 0 0 0.5rem rgb(215, 209, 209);
+    font-size: 12vmin;
+    text-align: center;
+    color: brown;
+}
+#reset{
+   
+    height: 5vmin;
+    width: 9vmin;
+    background-color: rgb(16, 19, 16);
+    border-radius: 5px;
+    box-shadow: 0 0 0.5vmin rgb(97, 53, 53);
+    color: #F9E9EC;
+    
+}
+#new-btn{
+    height: 5vmin;
+    width: 9vmin;
+    background-color: rgb(16, 19, 16);
+    border-radius: 5px;
+    box-shadow: 0 0 0.5vmin rgb(195, 182, 182);
+    color: #F9E9EC;
+    margin: 10px;
+}
+#msg{
+    color: #F9E9EC;
+    font-size: 50px;
+    height: 5vmin;
+}
+.msg-container{
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    flex-direction: column;
+    gap: 4vmin;
+
+   
+}
+.hide {
+  display: none; 
+  }
+
+h1{
+    color: aliceblue;
+    margin: 5vmin;
+}
+/* ================================
+   ✅ RESPONSIVE DESIGN (MOBILE)
+   ================================ */
+
+/* For screens smaller than 768px (phones & small tablets) */
+@media (max-width: 768px) {
+  body {
+    font-size: 14px;
+  }
+
+  h1 {
+    font-size: 7vmin;
+  }
+
+  .container {
+    height: 60vh;
+  }
+
+  .game {
+    height: 70vmin;
+    width: 70vmin;
+    gap: 2vmin;
+  }
+
+  .box {
+    height: 20vmin;
+    width: 20vmin;
+    font-size: 14vmin;
+  }
+
+  #reset,
+  #new-btn {
+    height: 8vmin;
+    width: 25vmin;
+    font-size: 3.5vmin;
+    margin: 2vmin;
+  }
+
+  #msg {
+    font-size: 6vmin;
+  }
+
+  .msg-container {
+    height: auto;
+    padding: 10px;
+  }
+}
+
+/* For very small devices (below 480px) */
+@media (max-width: 480px) {
+  .game {
+    height: 85vmin;
+    width: 85vmin;
+    gap: 2vmin;
+  }
+
+  .box {
+    height: 24vmin;
+    width: 24vmin;
+    font-size: 16vmin;
+  }
+
+  #reset,
+  #new-btn {
+    width: 30vmin;
+    font-size: 4vmin;
+  }
+
+  h1 {
+    font-size: 8vmin;
+  }
+}
